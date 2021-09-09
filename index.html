@@ -3,16 +3,24 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="img/a.png" type="image/x-icon" >
+    <link rel="stylesheet" href="jquery-ui.structure.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Minecraft Community</title>
 </head>
 <body>
+    <script>
+        $(document).ready(function() {
+            $( '.animate' ).fadeOut( 1 );
+            $( '.animate' ).fadeIn( 5000 );
+        });
+    </script>
     <header>
         <h1>
             Minecraft Community
         </h1>
     </header>
     <section class="banner">
-        <img src="img/banner.png" alt="banner">
+        <img src="img/banner.png" alt="banner" width="100%">
     </section>
     <nav class="main-nav">
         <ul>
@@ -30,11 +38,11 @@
             </li>
         </ul>
     </nav>
-    <main>
+    <main class = "animate">
         <article>
             <h2>
                 About Minecraft
-            </h2>
+            </h2>   
             <p>
                 Minecraft is a sandbox video game developed by the Swedish video game developer Mojang Studios. The game was created by Markus "Notch" Persson in the Java programming language. Following several early private testing versions, it was first made public in May 2009 before fully releasing in November 2011, with Jens Bergensten then taking over development. Minecraft has since been ported to several other platforms and is the best-selling video game of all time, with 200 million copies sold and 126 million monthly active users as of 2020.
 
@@ -66,5 +74,7 @@ Minecraft has been critically acclaimed, winning several awards and being cited 
              
         </p>
     </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
 </body>
 </html>
